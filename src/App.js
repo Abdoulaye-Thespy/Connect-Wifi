@@ -50,12 +50,9 @@ function App() {
               </button>
             </div>
             <div>
-              <a href="" className="btn-grad2">
-                <span>
-                  <i className="fas fa-qrcode"></i>
-                </span>
-                Open using QR
-              </a>
+            <button type="submit" className="btn btn-grad btn-grad34 text">
+                Sign Up
+              </button>
             </div>
           </div>
         </form>
