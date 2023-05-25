@@ -13,7 +13,7 @@ function App({ signOut }) {
       <header className="screen">
         <img src={mylogo} alt="Giganet Logo" className="logo" />
         <p className="text_header text">
-          Powered by<br />
+          Powered@<br />
           FreelanceConnect
         </p>
       </header>
