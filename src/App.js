@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import mylogo from './images/mylogo.png';
 import './App.css';
+import '@aws-amplify/ui-react/styles.css';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <h3 className="text">Connexion</h3>
         <p className="text textB">
           Pour vous connecter à <span className="giga">FREELANCE</span>
-          <span className="net">CONNECT</span>. Veuillez entrer votre identifiant et votre mot de passe
+          <span className="net">CONNECT</span>.Veuillez entrer votre identifiant et votre mot de passe
         </p>
         <form className="loginForm" action="./connect.html">
           <div className="form-group">
@@ -58,10 +59,7 @@ function App() {
         </form>
       </div>
       <div>
-          <p className="text textA textB">100Fcfa-250Mb</p>
-          <p className="text textA textB">500Fcfa-1Gb</p>
           <div className="voir_plus">
-            <p>Voir plus</p>
             <p><i className="fas fa-long-arrow-alt-right"></i></p>
           </div>
           <p className="text textA textB">Le meilleur de l'internet Wifi haut débit</p>
