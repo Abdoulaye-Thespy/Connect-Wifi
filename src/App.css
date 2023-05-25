@@ -1,38 +1,460 @@
-.App {
-  text-align: center;
+body {
+  background-image: url("./images/background11.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-position: center; /* Center the image */
+  background-size: cover;
+  font-family: 'Abril Fatface', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  margin-top: -30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 225px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content, .App {
+  background-color: #646464;
+  width: 35%;
+  margin: auto;
+  padding: 3rem;
+  border-radius: 0.7rem;
+  min-height: 100vh;
+}
+
+.text_header {
+  font-size: 20px;
+  text-align: center;
+}
+
+.text {
+  color: #fff;
+}
+
+.textB {
+  font-size: 20px;
+}
+
+.textA {
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: -5px;
+  left: 32.5%;
+  height: 55px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.giga {
+  color: #ef7b18;
+  font-size: 22px;
+}
+
+.social_media_handles {
+  margin: -5px 0 0 -30px;
+  padding-right: 20px;
+  box-shadow: -5px 5px #737373;
+  box-shadow: -5px -5px 12px #737373;
+  border-radius: 10px;
+  padding: 10px 10px 0 0;
+}
+
+.social_media_handlesp {
+  color: #fff;
+  font-size: 18px;
+}
+
+.social_media_handles ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social_media_handles ul i {
+  font-size: 45px;
+  color: #ffad33;
+}
+
+.promo_div {
+  border-left: 5px solid #9ab5ff;
+}
+
+.promo_div1 {
+  border-left: 5px solid #2ca3ff;
+}
+
+.promo_div2 {
+  border-left: 5px solid #ffcf53;
+}
+
+.promo_div3 {
+  border-left: 5px solid #f6b100;
+}
+
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.7rem;
+  padding: 0 10px 0 10px;
+}
+
+.promo :first-child {
+  width: 70%;
+}
+
+.promo p {
+  padding-top: 10px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.net {
+  color: #fbbb19;
+  font-size: 22px;
+}
+
+.btnDiv {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.btn-grad { background-image: linear-gradient(to right, #f09819 0%, #edde5d  51%, #f09819  100%); }
+
+.btn-grad {
+  margin: 30px 0 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #737373;
+  display: block;
+  width: 20rem;
+  height: 3.2rem;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.btn-grad2 { background-image: linear-gradient(to right, #1fa2ff 0%, #12d8fa  51%, #1fa2ff  100%); }
+
+.btn-grad2 {
+  margin: auto;
+  padding: 12px 0 12px 0;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #737373;
+  border-radius: 15px;
+  display: block;
+  font-size: 20px;
+  width: 20rem;
+}
+
+.btn-grad2:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-grad2 span i {
+  font-size: 30px;
+  margin: 0 25px -10px 25px;
+}
+
+.btn-grad33 { background-image: linear-gradient(to right, #9ab5ff 50%, #9ab5ff  50%); }
+.btn-grad34 { background-image: linear-gradient(to right, #2ca3ff 50%, #2ca3ff  50%); }
+.btn-grad35 { background-image: linear-gradient(to right, #ffcf53 50%, #ffcf53  50%); }
+.btn-grad36 { background-image: linear-gradient(to right, #f6b100 50%, #f6b100  50%); }
+.btn-grad38 { background-image: linear-gradient(to right, #f33 50%, #f33  50%); }
+.btn-grad39 { background-image: linear-gradient(to right, #4da6ff 50%, #4da6ff  50%); }
+
+.btn-grad3 {
+  margin: auto;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  width: 10rem;
+}
+
+.btn-grad3:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.connect1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 50px;
+  margin-top: 1.5rem;
+  max-width: 80%;
+  padding: 0 4rem 2rem 0;
+}
+
+.logout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect1_Yellow {
+  font-size: 20px;
+  color: #fbbb19;
+}
+
+.connect1_White {
+  color: #fff;
+  font-size: 20px;
+}
+
+.who_are_we {
+  text-align: center;
+  color: #fbbb19;
+  font-size: 35px;
+}
+
+.who_are_we p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.intro {
+  font-size: 20px;
+}
+
+.intro span {
+  color: #4dc3ff;
+}
+
+.trait::before {
+  content: "−";
+  color: #fbbb19;
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  margin-right: -15px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo_welcome {
+  margin: 8rem 0 5rem 0;
+  width: 20rem;
+  height: 10rem;
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  margin-top: 4rem;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
   }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scale-in-centerp {
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  width: 10rem;
+  height: 5rem;
+}
+
+@-webkit-keyframes scale-in-centerp {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scale-in-centert {
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-12-20 17:59:37
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-centert {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.voir_plus {
+  color: #2999f1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voir_plus p i {
+  margin-top: 7px;
+  margin-left: 8px;
+}
+
+.base {
+  margin: 10px 0 2px 0;
+  font-size: 20px;
+}
+
+.basique {
+  color: #9ab5ff;
+}
+
+.basique1 {
+  color: #2ca3ff;
+}
+
+.basique2 {
+  color: #ffcf53;
+}
+
+.basique3 {
+  color: #f6b100;
+}
+
+.connecté {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.deconnecté {
+  text-align: center;
+  display: none;
+  margin-top: 2rem;
+}
+
+.vert {
+  color: #6f6;
+  margin-right: 0;
+}
+
+.blanc {
+  color: #fff;
+}
+
+.rouge {
+  color: red;
+  margin-right: 1rem;
+}
+
+#start {
+  display: none;
+  margin-top: -47px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
 }
