@@ -13,13 +13,13 @@ function App({ signOut }) {
       <header className="screen">
         <img src={mylogo} alt="Giganet Logo" className="logo" />
         <p className="text_header text">
-          Powered by <br />
+          Powered by<br />
           FreelanceConnect
         </p>
       </header>
         <div id="connect" className="container tab-pane active">
         <br />
-        <h3 className="text">Connexion</h3>
+        <h3 className="text">Connexion ici</h3>
         <p className="text textB">
           Pour vous connecter à <span className="giga">FREELANCE</span>
           <span className="net">CONNECT</span>.Veuillez entrer votre identifiant et votre mot de passe
