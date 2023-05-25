@@ -39,7 +39,7 @@ function App({ signOut }) {
           </div>
           <div className="form-group">
             <label htmlFor="exampleInputPassword1" className="text">
-              Mot de passe
+              Mot de passe.
             </label>
             <input
               type="password"
