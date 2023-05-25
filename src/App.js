@@ -3,7 +3,11 @@ import mylogo from './images/mylogo.png';
 import './App.css';
 import '@aws-amplify/ui-react/styles.css';
 
-function App() {
+import {
+  withAuthenticator
+} from "@aws-amplify/ui-react";
+
+function App({ signOut }) {
   return (
     <div className="App">
       <header className="screen">
@@ -51,7 +55,7 @@ function App() {
               </button>
             </div>
             <div>
-            <button type="submit" className="btn btn-grad btn-grad34 text">
+            <button type="submit" className="btn btn-grad btn-grad34 text" onClick={signOut}>
                 Sign Up
               </button>
             </div>
@@ -70,4 +74,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
