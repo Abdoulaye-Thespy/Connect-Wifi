@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import { Auth } from 'aws-amplify';
 import mylogo from '../images/mylogo.png';
 import { Flex } from '@aws-amplify/ui-react';
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -16,6 +18,7 @@ function Login() {
     try {
       const user = await Auth.signIn(username, password);
       console.log('User signed in:', user);
+      navigate('/')
 
       // Handle successful sign-in, e.g., navigate to a new page
     } catch (error) {
