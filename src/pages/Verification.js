@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import { Auth } from 'aws-amplify';
 import { Flex } from '@aws-amplify/ui-react';
+import { useNavigate, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+
 
 import mylogo from '../images/mylogo.png';
 
-function Verification({username}) {
+function Verification() {
+  const navigate = useNavigate();
+  const { username } = useParams();
   const [verificationCode, setVerificationCode] = useState('');
 
   async function handleVerification(event) {
@@ -14,6 +19,7 @@ function Verification({username}) {
       await Auth.confirmSignUp(username, verificationCode);
 
       console.log('Verification successful!');
+      navigate('/signin')
       // Handle successful verification, e.g., navigate to a new page
     } catch (error) {
       console.log('Error verifying sign-up:', error);
@@ -49,7 +55,7 @@ function Verification({username}) {
               <p className="text textB">
                 Pour verifier votre compte, veuillez entrer le code sur votre Email.
               </p>
-              <form className="loginForm" action="./connect.html">
+              <form className="loginForm" onSubmit={handleVerification}>
                 <div className="form-group">
                   <label htmlFor="exampleInputEmail1" className="text">
                     Code de verification
@@ -74,6 +80,7 @@ function Verification({username}) {
              <div>
                 <div className="voir_plus">
                   <p><i className="fas fa-long-arrow-alt-right"></i></p>
+                  <Link to="/signin"> Sign In</Link>
                 </div>
                 <p className="text textA textB">Le meilleur de l'internet Wifi haut débit</p>
               </div>

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import '@aws-amplify/ui-react/styles.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Auth } from "aws-amplify";
 
 import '../App.css';
@@ -8,6 +8,7 @@ import mylogo from '../images/mylogo.png';
 import { Flex } from '@aws-amplify/ui-react';
 
 function SignUp(){
+    const navigate = useNavigate();
     const [user, setUser] = useState({username: "", email: "", password: "", passwordConfirm:""});
     function handleChange(e) {
         setUser(prevUser => {
@@ -34,7 +35,7 @@ function SignUp(){
           });
     
           console.log('Sign-up successful!');
-          // Handle successful sign-up, e.g., navigate to a new page
+          navigate(`/confirm/${username}`);
         } catch (error) {
           console.log('Error signing up:', error);
           // Handle sign-up error, e.g., display error message

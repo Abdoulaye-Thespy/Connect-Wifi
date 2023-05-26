@@ -15,7 +15,7 @@ function App() {
       <Route exact path="/" element={<Welcome />} />
       <Route exact path="signin" element={<Login />} />
       <Route exact path="/signup" element={<SignUp />} />
-      <Route exact path="/confirm" element={<Verification />} />
+      <Route exact path="/confirm/:username" element={<Verification />} />
       {/* Add more routes as needed */}
     </Routes>
   </Router>
