@@ -122,7 +122,7 @@ function SignUp(){
               </div>
               <div>
                 <span>Already have an account? </span>
-                <Link to="/signin"> Sign In</Link>
+                <Link to="/signin" className="sign"> Sign In</Link>
               </div>
             </div>
   

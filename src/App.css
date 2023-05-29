@@ -22,7 +22,8 @@ main {
   width: 225px;
 }
 
-.content, .App {
+.content,
+.App {
   background-color: #646464;
   width: 35%;
   margin: auto;
@@ -457,4 +458,137 @@ main {
 .nav-item {
   display: flex;
   justify-content: center;
+}
+
+.sign {
+  color: #f6b100;
+}
+
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: lightblue;
+    background-image: url("./images/background11.png");
+  }
+
+  .content,
+  .App{
+    background-color: #646464;
+    width: 100%;
+    margin: auto;
+    padding: 2rem 0 25px 0;
+    border-radius: 0.7rem;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 45px;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .logo {
+    width: 7rem;
+    height: 3rem;
+  }
+
+  .text_header {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  main {
+    margin-top: -30px;
+  }
+
+  .textB {
+    font-size: 14px;
+  }
+
+  .content,
+  .App {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .promo p {
+    padding-top: 10px;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .btn-grad3 {
+    width: 10rem;
+    padding: -5px 0 -5px 0;
+  }
+
+  .content,
+  .App {
+    border-radius: 0;
+  }
+
+  .social_media_handlesp {
+    font-size: 13.5px;
+  }
+
+  .social_media_handles ul i {
+    font-size: 25px;
+    color: #ffad33;
+  }
+
+  .promo {
+    height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content,
+  .App {
+    width: 65%;
+    margin: auto;
+  }
+
+  .btnDiv button {
+    width: 10rem;
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+  }
+
+  .connect1_Yellow {
+    font-size: 15px;
+  }
+
+  .connect1_White {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .content,
+  .App{
+    width: 100%;
+    margin: auto;
+    line-height: 150%;
+  }
+
+  #menu1 {
+    padding-bottom: 3rem;
+  }
+
+  .content,
+  .App {
+    padding-bottom: 30px;
+  }
+
+  .promo p {
+    padding-top: 10px;
+    font-size: 13px;
+    color: #fff;
+  }
 }

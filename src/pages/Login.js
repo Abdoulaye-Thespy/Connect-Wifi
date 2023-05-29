@@ -79,7 +79,7 @@ function Login() {
               </div>
               <div>
                 <span>You don't have an account? </span>
-                <Link to="/signup">Sign Up</Link>
+                <Link to="/signup" className="sign">Sign Up</Link>
               </div>
             </div>
           </form>

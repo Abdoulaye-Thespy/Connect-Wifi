@@ -80,7 +80,7 @@ function Verification() {
              <div>
                 <div className="voir_plus">
                   <p><i className="fas fa-long-arrow-alt-right"></i></p>
-                  <Link to="/signin"> Sign In</Link>
+                  <Link to="/signin" className="sign"> Sign In</Link>
                 </div>
                 <p className="text textA textB">Le meilleur de l'internet Wifi haut débit</p>
               </div>
